@@ -289,7 +289,7 @@
 	</a>
 
 	<div class="headerTableLayout">
-		<a href="#">
+		<a href="shop.php">
 			<div class="headerTableCell colorTransition">
 				<p>Shop</p>
 			</div>

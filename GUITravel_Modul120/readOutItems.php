@@ -14,7 +14,7 @@
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connection_error);
 	}
-
+	
 	$sql = "SELECT * FROM item";
 	$result = $conn->query($sql) or die($conn->error);
 

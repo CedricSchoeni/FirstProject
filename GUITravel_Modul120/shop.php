@@ -1,6 +1,6 @@
 <?php 
 	session_start();
-	include"readOutTags.php";
+	include"readOutItems.php";
  ?>
 
 
@@ -22,7 +22,7 @@
 	</a>
 
 	<div class="headerTableLayout">
-		<a href="shop.php">
+		<a href="#">
 			<div class="headerTableCell colorTransition">
 				<p>Shop</p>
 			</div>
@@ -44,10 +44,12 @@
 
 <div class="mainContainer">
 	<?php
-	for ($i=0; $i < count($tag_id); $i++) { 
-		echo'<a href="shop.php?tag='.$tag_id[$i].'">';
-	echo'<div class="container3 colorTransition">';
-		echo'<h3>'.$tag_name[$i].'</h3>';
+	for ($i=0; $i < count($item_id); $i++) { 
+		echo'<a href="productView?tag='.$item_id[$i].'">';
+	echo'<div class="container2 colorTransition">';
+		echo'<h3>'.$item_name[$i].'</h3>';
+		echo'<p>'.$item_description[$i].'</p>';
+		echo'<img src="'.$item_imagePath[$i].'">';
 	echo'</div>';
 	echo'</a>';
 	}
